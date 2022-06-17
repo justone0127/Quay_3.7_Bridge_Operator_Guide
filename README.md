@@ -8,7 +8,7 @@ Bridge Operator의 주요 목표는 통합 OpenShift 레지스트리의 기능�
 
 
 
-==Quay 3.6 버전부터는 Quay Bridge Operator(QBO)를 설치하면 더 이상 Webhook 인증서를 수동으로  생성하는 스크립트를 실행할 필요가 없습니다. Operator 설치 시 MutatingWebhookConfiguration이 자동으로 생성됩니다.==
+**Quay 3.6 버전부터는 Quay Bridge Operator(QBO)를 설치하면 더 이상 Webhook 인증서를 수동으로  생성하는 스크립트를 실행할 필요가 없습니다. Operator 설치 시 MutatingWebhookConfiguration이 자동으로 생성됩니다.**
 
 
 
