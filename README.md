@@ -20,7 +20,7 @@ Bridge Operator의 주요 목표는 통합 OpenShift 레지스트리의 기능�
 - ImageStreams를 사용하여 Red Hat Quay로 출력하는 새 빌드를 자동으로 다시 작성
 - 빌드가 완료되면 ImageStream 태그 자동 가져오기
 
-![15_quay_bridge_operator](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\15_quay_bridge_operator.png)
+![15_quay_bridge_operator](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/15_quay_bridge_operator.png)
 
 
 
@@ -54,7 +54,7 @@ Bridge Operator의 주요 목표는 통합 OpenShift 레지스트리의 기능�
 
   Quay Console 접속 > Create New Organization 선택 > 조직 생성 > `test` 조직 생성
 
-  ![01_new_organization](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\01_new_organization.png)
+  ![01_new_organization](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/01_new_organization.png)
 
 - Application 생성
 
@@ -62,25 +62,25 @@ Bridge Operator의 주요 목표는 통합 OpenShift 레지스트리의 기능�
 
   - 가이드에서는 `openshift`라는 새로운 Application을 생성함
 
-    ![02_new_application](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\02_new_application.png)
+    ![02_new_application](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/02_new_application.png)
 
   - 생성된 `openshift` Application 목록 확인
 
-    ![03_new_application02](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\03_new_application02.png)
+    ![03_new_application02](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/03_new_application02.png)
 
 - Token 생성
 
   생성된 `openshift` 선택 > 왼쪽 탐색 메뉴에서 **Generate Token** 메뉴 선택 > 아래 권한 설정 선택 > **Generate Access Token** 버튼을 눌러서 Token 생성
 
-  ![04_generate_token](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\04_generate_token.png)
+  ![04_generate_token](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/04_generate_token.png)
 
 - 생성할 토큰에 대한 권한을 검토한 후에 **Authorize Application** 버튼을 선택하여 토큰 생성을 완료
 
-  ![05_authorize_application](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\05_authorize_application.png)
+  ![05_authorize_application](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/05_authorize_application.png)
 
 - 생성된 액세스 Token은 OpenShift에 등록해야 하므로 복사해 두어야 함
 
-  ![06_access_token](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\06_access_token.png)
+  ![06_access_token](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/06_access_token.png)
 
 ### 3.2 OpenShift Setup
 
@@ -90,7 +90,7 @@ Quay Bridge Operator에 대해 OpenShift를 설정하려면 다음을 포함한 
 
 OpertorHub 선택 > Quay Bridge Operator 검색 > Install > all namespaces Mode, Update Channel, Approval Strategy 선택 > Subscribe 선택
 
-![07_quay_bridge_operator](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\07_quay_bridge_operator.png)
+![07_quay_bridge_operator](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/07_quay_bridge_operator.png)
 
 ### 3.2.2 OAuth Token에 대한 OpenShift Secret 생성
 
@@ -169,7 +169,7 @@ OpenShift에서 프로젝트를 생성하여 Application을 배포하면, 해당
 
 OpenShift Console 또는 CLI 명령을 통해 프로젝트를 생성합니다.
 
-![09_new_project](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\09_new_project.png)
+![09_new_project](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/09_new_project.png)
 
 ```bash
 $ oc new-project quay-demo
@@ -179,9 +179,9 @@ $ oc new-project quay-demo
 
 개발자 콘솔 이동 > +Add > Developer Catalog : All services > Basic Spring Boot선택 > Create Application
 
-![10_sample_app](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\10_sample_app.png)
+![10_sample_app](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/10_sample_app.png)
 
-![11_create_app](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\11_create_app.png)
+![11_create_app](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/11_create_app.png)
 
 >  애플리케이션이 배포 된 후에 해당 이미지는 OpenShift의 기본 이미지 레지스트리가 아닌 Quay에 Push된 것을 확인 할 수 있습니다.
 
@@ -189,7 +189,7 @@ $ oc new-project quay-demo
 
 openshift_quay_demo 조직이 새로 생성 되었고,  해당 조직 아래에 `devfile-sample-java-springboot-basic-git` repository가 새로 생성된 것을 확인 할 수 있습니다.
 
-![12_quay_console](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\12_quay_console.png)
+![12_quay_console](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/12_quay_console.png)
 
 > 또한,  User and Organizations 부분을 확인해보면, 해당 클러스터 내의 openshift 접두사가 붙지 않은 프로젝트에 대한 모든 조직이 생성된 것을 볼 수 있습니다.
 
@@ -197,7 +197,7 @@ openshift_quay_demo 조직이 새로 생성 되었고,  해당 조직 아래에 
 
 생성된 Repository 안에 Push된 이미지가 확인되며, 해당 이미지에 대한 보안 취약점 결과도 확인 가능합니다. 
 
-![13_quay_repository](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\13_quay_repository.png)
+![13_quay_repository](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/13_quay_repository.png)
 
 
 
@@ -205,7 +205,7 @@ openshift_quay_demo 조직이 새로 생성 되었고,  해당 조직 아래에 
 
 Security Scan 결과를 선택하면, 다음과 같이 이미지에 대한 보안 취약점 결과도 상세하게 확인 가능합니다.
 
-![14_security_scanning](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\14_security_scanning.png)
+![14_security_scanning](https://github.com/justone0127/Quay_3.7_Bridge_Operator_Guide/blob/main/images/14_security_scanning.png)
 
 
 
