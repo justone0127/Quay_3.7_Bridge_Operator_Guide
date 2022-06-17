@@ -1,6 +1,6 @@
 ## Quay 3.7 Bridge Operator Guide
 
-Quay Bridge Operator를 사용하여 OpenShift의 통합 컨테이너 레짖스트리를 Red Hat Quay 레지스트리로 교체할 수 있습니다. 이를 통해 통합 OpenShift 레지스트리는 RBAC(Role Baced Access Control) 기능이 향상된 고 가용성 엔터프라이즈급 Red Hat Quay 레지스트리가 됩니다.
+Quay Bridge Operator를 사용하여 OpenShift의 통합 컨테이너 레스트리를 Red Hat Quay 레지스트리로 교체할 수 있습니다. 이를 통해 통합 OpenShift 레지스트리는 RBAC(Role Baced Access Control) 기능이 향상된 고 가용성 엔터프라이즈급 Red Hat Quay 레지스트리가 됩니다.
 
 
 
