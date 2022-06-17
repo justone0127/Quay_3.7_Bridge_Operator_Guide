@@ -7,11 +7,6 @@ Quay Bridge Operator를 사용하여 OpenShift의 통합 컨테이너 레스트�
 Bridge Operator의 주요 목표는 통합 OpenShift 레지스트리의 기능을 새로운 Red Hat Quay 레지스트리에 복제하는 것 입니다. 이 Operator로 활성화된 기능은 다음과 같습니다.
 
 
-
-**Quay 3.6 버전부터는 Quay Bridge Operator(QBO)를 설치하면 더 이상 Webhook 인증서를 수동으로  생성하는 스크립트를 실행할 필요가 없습니다. Operator 설치 시 MutatingWebhookConfiguration이 자동으로 생성됩니다.**
-
-
-
 - OpenShift 네임스페이스를 Red Hat Quay 조직으로 동기화합니다.
 
   - 각 기본 네임스페이스 서비스 계정에 대한 로봇 계정 생성
@@ -41,6 +36,8 @@ Bridge Operator의 주요 목표는 통합 OpenShift 레지스트리의 기능�
 - `superuser` 권한이 있는 Red Hat Quay 환경
 - `cluster-admin` 권한이 있는 Red Hat OpenShift Container Platform 환경 (4.2 이상 권장)
 - OpenShift command line 도구 (`oc` command)
+
+**Quay 3.6 버전부터는 Quay Bridge Operator(QBO)를 설치하면 더 이상 Webhook 인증서를 수동으로  생성하는 스크립트를 실행할 필요가 없습니다. Operator 설치 시 MutatingWebhookConfiguration이 자동으로 생성됩니다.**
 
 ### 3. Setting up and configuring OpenShift and Red Hat Quay
 
