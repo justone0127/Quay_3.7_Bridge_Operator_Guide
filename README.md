@@ -17,12 +17,10 @@ Bridge Operator의 주요 목표는 통합 OpenShift 레지스트리의 기능�
   - 각 기본 네임스페이스 서비스 계정에 대한 로봇 계정 생성
   - 생성된 각 로봇 계정에 대한 암호 생성 (각 로봇 암호를 서비스 계정에 탑재 가능 및 이미지 풀 암호로 연결)
   - OpenShift ImageStreams를 Quay 저장소로 동기화
-
 - ImageStreams를 사용하여 Red Hat Quay로 출력하는 새 빌드를 자동으로 다시 작성
-
 - 빌드가 완료되면 ImageStream 태그 자동 가져오기
 
-![08_quay_bridge_operator](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\08_quay_bridge_operator.png)
+![15_quay_bridge_operator](C:\Works\01_자료\Red Hat Quay\quay3.7.1_bridge_operator\15_quay_bridge_operator.png)
 
 
 
