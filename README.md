@@ -146,9 +146,6 @@ OpenShift와 Quay간의 통합을 완료하려면 `QuayIntegration` 사용자 �
 
   ```bash
   spec:
-    allowedRegistriesForImport:
-      - domainName: ${QUAY_HOST}
-        insecure: true
     registrySources:
       insecureRegistries:
         - ${QUAY_HOST}
